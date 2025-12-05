@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnConnect - Plataforma de Desenvolvimento Profissional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- SweetAlert2 (para feedback de envio) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>LearnConnect - Desenvolva suas habilidades profissionais com as melhores ferramentas</h1>
+            <p>Aprenda, pratique e conecte-se com grandes oportunidades no mercado</p>
+            <a href="#cursos" class="cta-button">Comece agora</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#vagas">Vagas de Emprego</a></li> <!-- Novo item -->
+            <li><a href="#professores">Professores</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre a Plataforma</h2>
+            <p>Oferecemos uma plataforma completa para a formação profissional, unindo cursos de alta qualidade, prática, networking e acesso a vagas de emprego. A missão é proporcionar uma jornada de aprendizado que não só capacite, mas também conecte nossos alunos ao mercado de trabalho.</p>
+        </div>
+    </section>
+
+    <section id="cursos">
+        <div class="container">
+            <h2>Cursos Disponíveis</h2>
+            <p>Melhore suas habilidades com cursos de alta qualidade nas áreas mais procuradas.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Aprenda HTML, CSS e JavaScript para criar websites incríveis.</p>
+                    <a href="#" class="cta-button">Matricule-se</a>
+                </div>
+                <div class="card">
+                    <h3>Data Science</h3>
+                    <p>Analise dados e construa modelos preditivos usando Python.</p>
+                    <a href="#" class="cta-button">Matricule-se</a>
+                </div>
+                <div class="card">
+                    <h3>Machine Learning</h3>
+                    <p>Entenda os algoritmos de IA e aplique-os no seu dia a dia.</p>
+                    <a href="#" class="cta-button">Matricule-se</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vagas">
+        <div class="container">
+            <h2>Vagas de Emprego</h2>
+            <p>Confira as vagas abertas nas áreas de Desenvolvimento, Análise de Dados, Inteligência Artificial e muito mais!</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Desenvolvedor Web</h3>
+                    <p>Empresa líder busca desenvolvedor para atuar em projetos de grande porte. Conhecimentos em HTML, CSS e JavaScript são essenciais.</p>
+                    <a href="#" class="cta-button">Saiba mais</a>
+                </div>
+                <div class="card">
+                    <h3>Analista de Dados</h3>
+                    <p>Vaga para analista com experiência em Python e SQL. Oportunidade de crescimento em uma empresa inovadora.</p>
+                    <a href="#" class="cta-button">Saiba mais</a>
+                </div>
+                <div class="card">
+                    <h3>Engenheiro de Dados</h3>
+                    <p>Buscamos engenheiro de dados para trabalhar com grandes volumes de informações e infraestrutura de dados.</p>
+                    <a href="#" class="cta-button">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="professores">
+        <div class="container">
+            <h2>Nossos Professores</h2>
+            <p>Profissionais experientes que estão prontos para te ajudar a alcançar seus objetivos.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>José Almeida</h3>
+                    <p>Especialista em Desenvolvimento Web, mais de 10 anos de experiência em empresas líderes do setor.</p>
+                </div>
+                <div class="card">
+                    <h3>Laura Costa</h3>
+                    <p>Professora de Data Science, com experiência em grandes empresas de análise de dados e AI.</p>
+                </div>
+                <div class="card">
+                    <h3>Carlos Pereira</h3>
+                    <p>Mentor de Machine Learning, com um portfólio robusto de projetos em IA e automação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-posts">
+                <div class="post">
+                    <h3><a href="#">Como começar na carreira de Data Science?</a></h3>
+                    <p>Aprenda os primeiros passos para ingressar no mundo de dados, desde conceitos básicos até ferramentas avançadas.</p>
+                </div>
+                <div class="post">
+                    <h3><a href="#">As melhores ferramentas para um desenvolvedor web</a></h3>
+                    <p>Conheça as ferramentas mais usadas no mercado para o desenvolvimento de sites e aplicativos.</p>
+                </div>
+                <div class="post">
+                    <h3><a href="#">O que é Machine Learning e por onde começar?</a></h3>
+                    <p>Entenda os fundamentos do aprendizado de máquina e como você pode aprender essa tecnologia disruptiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="cta-button">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LearnConnect. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
