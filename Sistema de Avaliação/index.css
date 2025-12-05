@@ -1,0 +1,193 @@
+/* Reset básico para garantir que não haja estilos inesperados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8fb; /* Fundo claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Contêiner geral */
+  .container {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Títulos */
+  h1 {
+    font-size: 28px;
+    color: #0077b6; /* Azul mais forte */
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  h1:hover {
+    color: #005f86;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #005f86;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Botão secundário */
+  .btn-secondary {
+    background-color: #a1c4fd;
+    border-radius: 8px;
+    padding: 14px 24px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #6497b1;
+  }
+  
+  /* Tela de avaliação */
+  .evaluation-group {
+    margin-bottom: 25px;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  input[type="range"] {
+    width: 80%;
+    margin: 10px 0;
+    height: 8px;
+    background-color: #d1e7f5;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+    background-color: #a0c9e6;
+  }
+  
+  span {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 40px;
+    color: #0077b6;
+  }
+  
+  textarea {
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: vertical;
+    background-color: #f4f8fb;
+    transition: background-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    background-color: #e1f1ff;
+    outline: none;
+  }
+  
+  /* Tela de agradecimento */
+  #screen-thank-you {
+    text-align: center;
+    color: #4f9d71;
+  }
+  
+  /* Transição suave entre as telas */
+  .screen {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Estilos para garantir que o conteúdo da tela inicial, de avaliação e agradecimento apareçam corretamente */
+  #screen-start {
+    display: block;
+  }
+  
+  #screen-evaluation, #screen-thank-you {
+    display: none;
+  }
+  
+  /* Ajuste para garantir que a tela ocupe toda a altura da página */
+  html, body {
+    height: 100%;
+  }
+  
+  /* Estilos para o container das logos */
+.logo-container {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da borda direita */
+    display: flex;
+    justify-content: space-between; /* Garante o espaçamento entre as logos */
+    align-items: center; /* Alinha as logos verticalmente no centro */
+    gap: 15px; /* Espaço entre as logos */
+  }
+  
+  /* Estilos para as logos */
+  .logo-lins, .logo-santa-casa {
+    max-height: 60px; /* Limita a altura das logos */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efeito de hover nas logos */
+  .logo-lins:hover, .logo-santa-casa:hover {
+    transform: scale(1.1); /* Aumenta um pouco ao passar o mouse */
+  }
+  
+  

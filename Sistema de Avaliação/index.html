@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação de Atendimento - Santa Casa de Lins</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Tela Inicial -->
+  <div id="screen-start" class="screen">
+    <div class="container">
+      <h1>Bem-vindo à Santa Casa de Lins</h1>
+      <p>Avalie nosso atendimento!</p>
+      <button class="btn-primary" onclick="goToEvaluation()">Iniciar Avaliação</button>
+    </div>
+  </div>
+
+  <!-- Tela de Avaliação -->
+  <div id="screen-evaluation" class="screen" style="display: none;">
+    <div class="container">
+      <h1>Avalie o Atendimento</h1>
+      <p>Como você avalia os seguintes aspectos?</p>
+      
+      <div class="evaluation-group">
+        <label for="medical-care">Qualidade Médica:</label>
+        <input type="range" id="medical-care" name="rating" min="1" max="5">
+        <span id="medical-care-value">3</span>
+      </div>
+      
+      <div class="evaluation-group">
+        <label for="nursing">Equipe de Enfermagem:</label>
+        <input type="range" id="nursing" name="rating" min="1" max="5">
+        <span id="nursing-value">3</span>
+      </div>
+
+      <div class="evaluation-group">
+        <label for="infrastructure">Infraestrutura:</label>
+        <input type="range" id="infrastructure" name="rating" min="1" max="5">
+        <span id="infrastructure-value">3</span>
+      </div>
+
+      <div class="evaluation-group">
+        <label for="waiting-time">Tempo de Espera:</label>
+        <input type="range" id="waiting-time" name="rating" min="1" max="5">
+        <span id="waiting-time-value">3</span>
+      </div>
+
+      <div class="evaluation-group">
+        <label for="comments">Comentários:</label>
+        <textarea id="comments" rows="4" placeholder="Deixe um comentário (opcional)"></textarea>
+      </div>
+
+      <button class="btn-primary" onclick="submitEvaluation()">Enviar Avaliação</button>
+    </div>
+  </div>
+
+  <!-- Tela de Agradecimento -->
+  <div id="screen-thank-you" class="screen" style="display: none;">
+    <div class="container">
+      <h1>Obrigado pela sua Avaliação!</h1>
+      <p>Suas respostas foram registradas. Agradecemos o seu feedback!</p>
+      <button class="btn-secondary" onclick="goToStart()">Voltar ao Início</button>
+    </div>
+  </div>
+
+<!-- Container para as logos -->
+<div class="logo-container">
+    <!-- Logo da cidade de Lins -->
+    <img src="lins.png" alt="Logo Lins" class="logo-lins">
+  
+    <!-- Logo da Santa Casa de Lins -->
+    <img src="santacasa.png" alt="Logo Santa Casa" class="logo-santa-casa">
+  </div>
+  
+
+
+  <script src="index.js"></script>
+</body>
+</html>
